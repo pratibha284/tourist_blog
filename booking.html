@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking - Explore Karnataka</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Plan Your Trip</h1>
+    <p>Customize your journey through Karnataka's treasures.</p>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="destination.html">Destinations</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="booking.html" class="active">Booking</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section class="booking-form">
+      <h2>Trip Booking Form</h2>
+      <form id="detailed-booking-form">
+        <label for="destination">Choose Your Destination:</label>
+        <select id="destination" name="destination" required>
+          <option value="">Select</option>
+          <option value="Hampi">Hampi</option>
+          <option value="Mysuru">Mysuru</option>
+          <option value="Coorg">Coorg</option>
+          <option value="Gokarna">Gokarna</option>
+        </select>
+        
+        <label for="travelers">Number of Travelers:</label>
+        <input type="number" id="travelers" name="travelers" min="1" max="10" required>
+        
+        <label for="check-in">Check-in Date:</label>
+        <input type="date" id="check-in" name="check-in" required>
+        
+        <label for="check-out">Check-out Date:</label>
+        <input type="date" id="check-out" name="check-out" required>
+        
+        <label for="transportation">Preferred Mode of Transport:</label>
+        <select id="transportation" name="transportation" required>
+          <option value="Car">Car</option>
+          <option value="Train">Train</option>
+          <option value="Flight">Flight</option>
+        </select>
+        
+        <label for="accommodation">Accommodation Preference:</label>
+        <select id="accommodation" name="accommodation" required>
+          <option value="Budget">Budget</option>
+          <option value="Mid-Range">Mid-Range</option>
+          <option value="Luxury">Luxury</option>
+        </select>
+
+        <label for="activities">Activities (Optional):</label>
+        <textarea id="activities" name="activities" placeholder="Mention any activities you wish to include, e.g., trekking, sightseeing"></textarea>
+
+        <button type="submit">Submit Booking</button>
+      </form>
+    </section>
+    <section class="pricing">
+      <h2>Estimated Price</h2>
+      <p id="price-estimate">Fill in the form to calculate your trip cost!</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Explore Karnataka. All rights reserved.</p>
+  </footer>
+  <script src="css/script.js"></script>
+</body>
+</html>

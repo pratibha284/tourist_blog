@@ -1,0 +1,72 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+  }
+  header {
+    text-align: center;
+    padding: 20px;
+    background: url('images/header.jpg') no-repeat center center/cover;
+    color: white;
+  }
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: #333;
+    margin: 0;
+    padding: 10px;
+  }
+  nav ul li {
+    margin: 0 15px;
+  }
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  nav ul li a:hover {
+    color: #4CAF50;
+  }
+  .places {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+  }
+  .place {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 300px;
+    text-align: center;
+  }
+  .place img {
+    width: 100%;
+    height: auto;
+  }
+  .booking {
+    padding: 20px;
+    text-align: center;
+  }
+  footer {
+    text-align: center;
+    background: #f1f1f1;
+    padding: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+    }
+    .places {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
